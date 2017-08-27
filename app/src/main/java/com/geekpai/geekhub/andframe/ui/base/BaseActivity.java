@@ -1,4 +1,4 @@
-package com.geekpai.geekhub.andframe.ui;
+package com.geekpai.geekhub.andframe.ui.base;
 
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;

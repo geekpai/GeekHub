@@ -13,7 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.geekpai.geekhub.andframe.ui.BaseActivity;
+import com.geekpai.geekhub.andframe.ui.base.BaseActivity;
 
 
 /**
@@ -58,10 +58,10 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.nav_home:
-                Snackbar.make(navigationView, "点我干啥？", Snackbar.LENGTH_LONG).setAction("asdf", new View.OnClickListener() {
+                Snackbar.make(navigationView, "点我干啥？", Snackbar.LENGTH_LONG).setAction("敢再点一下吗？", new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Snackbar.make(view, "老子点了咋地 ", Snackbar.LENGTH_LONG).setAction("敢再点一下吗？", null).show();
+                        Snackbar.make(view, "老子点了咋地 ", Snackbar.LENGTH_LONG).setAction("hehe", null).show();
                     }
                 }).show();
         }
