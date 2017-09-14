@@ -13,20 +13,6 @@ import android.support.multidex.MultiDex;
 
 class BaseAppliaction extends Application {
 
-    private AppBuildconfig buildconfig;
-
-    public AppBuildconfig getConfig() {
-        return buildconfig;
-    }
-
-    public void setConfig(AppBuildconfig buildconfig) {
-        this.buildconfig = buildconfig;
-    }
-
-    protected void globalConfig(String environment) {
-        buildconfig.globalConfig(this, environment);
-    }
-
     // classLoader 在加载 APK 的时候限制了class.dex 包含的 Java 方法数，其总数不能超过65535（64K)
     @Override
     protected void attachBaseContext(Context base) {

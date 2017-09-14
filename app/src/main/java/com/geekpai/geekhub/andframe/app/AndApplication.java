@@ -2,8 +2,6 @@ package com.geekpai.geekhub.andframe.app;
 
 import android.app.Activity;
 
-import com.geekpai.geekhub.andframe.utils.Util;
-
 import java.util.LinkedList;
 
 /**
@@ -44,6 +42,5 @@ public class AndApplication extends BaseAppliaction {
     public void onCreate() {
         super.onCreate();
         instance = this;
-        globalConfig(Util.getMetaData(this, "environment"));
     }
 }
